@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projeto2</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/formPage.css') }}">
+    </head>
+    <body>
+        <section>
+            <div class="box">
+                <h3>Adicione os produtos no formulário</h3>
+                <form action="/formPage" method="POST" class="form">
+                    <div name="Primeiro">
+                        <label for="produto">Nome do Produto</label>
+                        <input id="produto" type="text" name="produto#1" placeholder="Ex. 'Banana'" autocomplete="off">
+
+                        <label for="quantidade">Quantidade do objeto</label>
+                        <input id="quantidade" type="text" name="quantidade#1" placeholder="Ex. '10'" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="produto">Nome do Produto</label>
+                        <input id="produto" type="text" name="produto#2" placeholder="Ex. 'Banana'" autocomplete="off">
+
+                        <label for="quantidade">Quantidade do objeto</label>
+                        <input id="quantidade" type="text" name="quantidade#2" placeholder="Ex. '10'" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="produto">Nome do Produto</label>
+                        <input id="produto" type="text" name="produto#3" placeholder="Ex. 'Banana'" autocomplete="off">
+
+                        <label for="quantidade">Quantidade do objeto</label>
+                        <input id="quantidade" type="text" name="quantidade#3" placeholder="Ex. '10'" autocomplete="off">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <!-- <form action="/" method="POST">
+            <input type="text" name="produto" placeholder="Nome do produto:">
+            <p>
+            <input type="text" name="quantidade" placeholder="Quantidade do produto">
+            <p>
+            <button type="submit">Enviar</button>
+        </form> -->
+    </body>
+</html>

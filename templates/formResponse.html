@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projeto2</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/formResponse.css') }}">
+    </head>
+    <body>
+        <section>
+            <div class="box">
+                <div class="header">
+                    <h3>Lista</h3>
+                    <a href="/formPage">Escrever na lista +</a>
+                </div>
+                <div class="list">
+                    <div class="img">
+                        <img src="{{ url_for('static', filename='img/frutas.jpeg') }}">
+                    </div>
+                    <div class="content">
+                        <h2 class="rank"><small>#</small>1</h2>
+                        <h4>{{form['produto#1']}}</h4>
+                        <p>{{form['quantidade#1']}}</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="img">
+                        <img src="{{ url_for('static', filename='img/frutas.jpeg') }}">
+                    </div>
+                    <div class="content">
+                        <h2 class="rank"><small>#</small>2</h2>
+                        <h4>{{form['produto#2']}}</h4>
+                        <p>{{form['quantidade#2']}}</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="img">
+                        <img src="{{ url_for('static', filename='img/frutas.jpeg') }}">
+                    </div>
+                    <div class="content">
+                        <h2 class="rank"><small>#</small>3</h2>
+                        <h4>{{form['produto#3']}}</h4>
+                        <p>{{form['quantidade#3']}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{form}}
+    </body>
+</html>
