@@ -13,7 +13,7 @@ Ative usando algum codigo abaixo
 
 # Instalação do flask
 
-pip install Flask
+pip install -U Flask
 
 # Crie e nomeie um arquivo como 'app.py' na raíz dos arquivos
 # Codigo base:
@@ -29,11 +29,23 @@ def hello():
 
 if __name__ == "__main__":
     app.run(debug=True)
+# Executando o projeto pelo terminal
+
+"python3 -m venv venv"
+# Linux
+
+. venv/bin/activate
+# Windows
+
+. venv/script/activate
+
+# Instalando Flask
+
+pip install -U Flask
 
 # Executar o servidor padrão
 
 flask run
-
 # Executar o servidor no modo 'development'
 
 python app.py
