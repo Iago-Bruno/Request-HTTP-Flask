@@ -124,7 +124,7 @@ section::after {
 
 .box .list .content .rank {
     position: absolute;
-    right: -50px;
+    right: -60px;
     color: #03a9f4;
     transition: 0.5s;
     font-size: 2.5em;
@@ -136,12 +136,13 @@ section::after {
 }
 
 .box .list:hover .content .rank {
-    right: 20px;
+    right: 30px;
 }
 
 .box .list .content h4 {
     line-height: 1.2em;
     font-weight: 600;
+    margin-bottom: 4px;
     transition: 0.5s;
 }
 
